@@ -388,7 +388,7 @@ h5{
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
+/* Style the links inside the navigation bar 
 .topnav a {
   float: left;
   display: block;
@@ -399,7 +399,7 @@ h5{
   font-size: 17px;
 }
 
-/* Add an active class to highlight the current page */
+/* Add an active class to highlight the current page 
 .active {
   background-color: #4CAF50;
   color: white;
@@ -414,11 +414,12 @@ h5{
 .dropdown {
   float: left;
   overflow: hidden;
-  /* position: relative; */
+  position: relative; 
+
 }
 
 /* Style the dropdown button to fit inside the topnav */
-.dropdown .dropbtn {
+.dropbtn {
   font-size: 17px; 
   border: none;
   outline: none;
@@ -427,6 +428,8 @@ h5{
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  z-index: 20;
+  top: 58px;
 }
 
 /* Style the dropdown content (hidden by default) */
@@ -437,6 +440,7 @@ h5{
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 15;
+  
 }
 
 /* Style the links inside the dropdown */
@@ -447,6 +451,7 @@ h5{
   text-decoration: none;
   display: block;
   text-align: left;
+  position: absolute;
 }
 
 /* Add a dark background on topnav links and the dropdown button on hover */

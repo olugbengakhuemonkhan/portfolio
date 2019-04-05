@@ -1,7 +1,7 @@
 $(document).ready(function() {
  
     setTimeout(()=>{
-        $('.masthead').css('background-image',"url('./images/Backgroundpic5.jpg')");
+        $('.masthead').css('background-image',"url('./images/Backgroundpic5i.jpg')");
         
     
          setTimeout(()=>{

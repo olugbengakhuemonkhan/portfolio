@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-body {
+body  {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -13,12 +13,23 @@ body {
   background-color: rgb(32, 37, 35);
 }
 
+header.masthead {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: rgba(58, 49, 49, 0.616);
+  background-size: cover;
+  background-attachment: scroll;
+  background-image: url('./images/Backgroundpic3bi.jpg'); 
+  z-index: 1;
+}
+
 blockquote {
   color: gainsboro;
 }
 
 p {
-  color: azure;
+  color: rgb(254, 251, 251);
   padding: 2rem;
   background-color: rgb(32, 37, 35);
 }
@@ -78,15 +89,7 @@ h4 {
   font-size: 20px;
 }
 
-header.masthead {
-  position: relative;
-  padding-top: 150px;
-  padding-bottom: 150px;
-  background-color: rgba(58, 49, 49, 0.616);
-  background-size: cover;
-  background-attachment: scroll;
-  background-image: url('./images/Backgroundpic3bi.jpg');
-}
+
 
 @media (min-width: 1024px) {
   header.masthead {
@@ -209,15 +212,14 @@ h5{
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
+  z-index: 2;
 }
 
 /* Dropdown container - needed to position the dropdown content */
 .dropdown {
-  /*float: left;*/
+  float: left;
   overflow: hidden;
-  position: relative;
-  display: inline;
-  
+  z-index: 1; 
 }
 
 /* Style the dropdown button to fit inside the topnav */
@@ -235,11 +237,11 @@ h5{
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: relative;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 2;
 }
 
 /* Style the links inside the dropdown */
@@ -269,6 +271,7 @@ h5{
 /* Show the dropdown menu when the user moves the mouse over the dropdown button */
 .dropdown:hover .dropdown-content {
   display: block;
+  
  
 }
 
@@ -307,4 +310,11 @@ h5{
 
 footer {
   background-color: rgb(32, 37, 35);
+  margin-top: 75px;
 }
+
+script {
+  font-size: 1rem;
+  color: azure;
+}
+

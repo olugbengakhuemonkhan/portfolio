@@ -9,7 +9,7 @@ body  {
   background-attachment: fixed;
   background-position: center;
   font-family: 'Raleway', sans-serif;
-  color: rgb(53, 42, 42);
+  color: rgb(248, 242, 242);
   background-color: rgb(32, 37, 35);
 }
 
@@ -22,6 +22,7 @@ header.masthead {
   background-attachment: scroll;
   background-image: url('./images/Backgroundpic3bi.jpg'); 
   z-index: 1;
+  color: black
 }
 
 blockquote {
@@ -316,5 +317,9 @@ footer {
 script {
   font-size: 1rem;
   color: azure;
+}
+
+.fa-4x {
+  color: black;
 }
 

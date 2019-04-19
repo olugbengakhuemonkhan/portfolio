@@ -27,11 +27,11 @@ function displayGreeting() {
 
   
   if (currentHour < 12) { 
-    console.log("Good morning! " + "Welcome To Olugbenga's Portfolio"); 
+    document.querySelector(".header-note").innerHTML = ("Good morning!  " + " Welcome To Olugbenga's Portfolio"); 
   } else if (currentHour < 18) { 
-    console.log("Good afternoon! " + "Welcome To Olugbenga's Portfolio"); 
+    document.querySelector(".header-note").innerHTML = ("Good afternoon! " + "Welcome To Olugbenga's Portfolio"); 
   } else {
-    console.log("Good evening! " + "Welcome To Olugbenga's Portfolio"); 
+    document.querySelector(".header-note").innerHTML = ("Good evening! " + "Welcome To Olugbenga's Portfolio"); 
   } 
 
 }

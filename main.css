@@ -326,6 +326,8 @@ script {
 .header-img {
   float: left;
   padding-top: .5rem;
+  height: 2rem;
+  width: 4rem;
 }
 
 .contact {
@@ -344,6 +346,7 @@ script {
   float: left;
   padding-top: 4.5rem;
   padding-right: 1.5rem;
+  height: 3.5in; 
 }
 
 

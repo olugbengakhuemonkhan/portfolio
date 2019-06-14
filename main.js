@@ -22,21 +22,40 @@ function myFunction() {
     }
   }
 
-function displayGreeting() {
-  var currentHour = new Date().getHours();
 
-  
-  if (currentHour < 12) { 
-    document.querySelector(".header-note").innerHTML = ("Good morning!  " + " Welcome To Olugbenga's Portfolio"); 
-  } else if (currentHour < 18) { 
-    document.querySelector(".header-note").innerHTML = ("Good afternoon! " + "Welcome To Olugbenga's Portfolio"); 
-  } else {
-    document.querySelector(".header-note").innerHTML = ("Good evening! " + "Welcome To Olugbenga's Portfolio"); 
-  } 
 
-}
+var timeNow = new Date(); 
+var hoursNow = timeNow.getHours(); 
+var minutesNow = timeNow.getMinutes(); 
+var message = "Welcome to Olugbenga's Portfolio Page. It's "; 
+var hoursText; 
+if (minutesNow <= 30) { message += minutesNow + " minutes past ";
+ hoursText = hoursNow; 
+} else { message += (60 - minutesNow) + " minutes before ";
+  hoursText = hoursNow + 1;
+} 
+if (hoursNow == 0 && minutesNow <= 30) { 
+  message += "midnight.";
+} else if (hoursNow == 11 && minutesNow > 30) {
+   message += "noon."; 
+} else if (hoursNow < 12) { 
+  message += hoursText + " in the morning."; 
+} else if (hoursNow == 12 && minutesNow <= 30) { 
+  message += "noon."; 
+} else if (hoursNow < 18) { 
+  message += parseInt(hoursText - 12) + " in the afternoon."; 
+} else if (hoursNow == 23 && minutesNow > 30) { 
+  message += "midnight."; 
+} else {
+  message += parseInt(hoursText - 12) + " in the evening."; 
+} 
+document.getElementById("myOutput").innerHTML = message;
 
-displayGreeting();
+
+
+ 
+
+
 
 
 

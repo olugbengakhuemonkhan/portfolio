@@ -147,8 +147,11 @@ header.masthead .scroll-down {
   color: whitesmoke;
   padding: 3rem;
   font-size: 20px;
+  font-style: italic;
 
 } 
+
+
 
 header.masthead .scroll-down .btn:hover .header-note {
   color: rgba(255, 255, 255, 0.5) !important;

@@ -27,7 +27,7 @@ function myFunction() {
 var timeNow = new Date(); 
 var hoursNow = timeNow.getHours(); 
 var minutesNow = timeNow.getMinutes(); 
-var message = "Welcome to Olugbenga's Portfolio Page. It's "; 
+var message = "Welcome to Olugbenga's Portfolio Page. <br>It's "; 
 var hoursText; 
 if (minutesNow <= 30) { message += minutesNow + " minutes past ";
  hoursText = hoursNow; 
